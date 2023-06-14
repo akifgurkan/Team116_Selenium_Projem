@@ -71,10 +71,3 @@ public class C01_Amazon_Arama_Testi {
         driver.close();
     }
 }
-
-
-    git add .
-        git commit -m "first commit"
-        git branch -M main
-        git remote add origin https://github.com/akifgurkan/team116_Selenium_Projem.git
-        git push -u origin main
