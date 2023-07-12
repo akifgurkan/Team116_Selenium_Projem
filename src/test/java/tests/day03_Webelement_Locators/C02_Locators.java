@@ -24,7 +24,6 @@ public class C02_Locators {
                 - son 2 tane ise her turlu web element icin kullanilabilir
                    7- By.xPath
                    8- By.cssSelector
-
         */
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver.exe");
@@ -68,6 +67,6 @@ public class C02_Locators {
         }
 
         Thread.sleep(33000);
-         driver.close();
+         //driver.close();
     }
 }

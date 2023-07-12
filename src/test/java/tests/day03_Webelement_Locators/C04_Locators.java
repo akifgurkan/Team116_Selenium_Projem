@@ -35,7 +35,7 @@ public class C04_Locators {
          */
 
         //  2-   // arama kutusunun yanindaki today's deals linkini tiklayin
-        driver.findElement(By.partialLinkText("Today's")).click();
+        driver.findElement(By.partialLinkText("Today")).click();            //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         //alt satırda: todaysDealsElementi.click() yerine aynı satıra .click() de yazabiliriz.
 
         //3- açılan sayfada ilk ürünü tıklayın
