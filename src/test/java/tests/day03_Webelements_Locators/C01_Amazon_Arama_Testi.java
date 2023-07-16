@@ -1,4 +1,4 @@
-package tests.day03_Webelement_Locators;
+package tests.day03_Webelements_Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,8 @@ import java.time.Duration;
 public class C01_Amazon_Arama_Testi {
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe"); // bu satırı yazmasak da
+        // çalışır ama yapmak daha iyi.
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -67,7 +68,7 @@ public class C01_Amazon_Arama_Testi {
             System.out.println("Nutella arama testi FAILED");
         }
 
-      //  Thread.sleep(5000);
+      //  Thread.sleep(3000);
         driver.close();
     }
 }

@@ -1,4 +1,4 @@
-package tests.day03_Webelement_Locators;
+package tests.day03_Webelements_Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,7 @@ public class C04_Locators {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         //1- amazon sayfsına gidin.
-        driver.get("http://amazon.com");
+        driver.get("http://amazon.com"); // * Sayfanın saolda çıkan pop up u elle kapatman gerekiyor hızlıca.
 
         /*
         WebElement todaysDealsElementi = driver.findElement(By.linkText("Today's Deals"));
@@ -40,15 +40,19 @@ public class C04_Locators {
 
         //3- açılan sayfada ilk ürünü tıklayın
         Thread.sleep(3000);
+
         List<WebElement> urunElementleriListesi = driver.findElements(By.className("DealGridItem-module__dealItemContent_1vFddcq1F8pUxM8dd9FW32"));
-  /*
+          /*
             bir locator sonuc olarak birden fazla webelement donduruyorsa
             findElements() kullanirsak locator'a uygun olan tum WebElementleri getirirken,
-            findElement() kullanirsak locator'a uygun olan WebElement'lerin ILKINI bize getirir
 
-            driver.findElement(By.className("DealGridItem-module__dealItemContent_1vFddcq1F8pUxM8dd9FW32")).click()
-         */
-        urunElementleriListesi.get(0).click();
+            findElement() kullanirsak locator'a uygun olan WebElement'lerin --> ilkini bize getirir
+            driver.findElement(By.className("DealGridItem-module__dealItemContent_1vFddcq1F8pUxM8dd9FW32")).click();
+
+            System.out.println(urunElementleriListesi.size()); //60 adet eleman var.Yazdırmak istersek size() kullanabiliriz.
+          */
+
+       urunElementleriListesi.get(0).click();
 
         //4- Sayfayı kapat
         Thread.sleep(3000);

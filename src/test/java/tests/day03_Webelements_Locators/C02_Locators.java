@@ -1,10 +1,9 @@
-package tests.day03_Webelement_Locators;
+package tests.day03_Webelements_Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.time.Duration;
 import java.util.List;
@@ -49,9 +48,9 @@ public class C02_Locators {
          List<WebElement> urunIsimElementleriList = driver.findElements(By.xpath("//span[@class='a-size-base-plus a-color-base a-text-normal']"));
 
         if (urunIsimElementleriList.size() > 10) {
-            System.out.println("Listelenen urun sayisi testi PASSED");
+            System.out.println("Listelenen urun sayisi: \""+urunIsimElementleriList.size()+"\" adettir. Test PASSED");
         } else {
-            System.out.println("Listelenen urun sayisi testi FAILED");
+            System.out.println("Listelenen urun sayisi: \"+urunIsimElementleriList.size()+\" adettir. Test FAILED");
         }
 
         // 5.urun ismini yazdirin ve ismin Nutella icerdigini test edin
@@ -66,7 +65,7 @@ public class C02_Locators {
             System.out.println("5.urun isim testi FAILED");
         }
 
-        Thread.sleep(33000);
-         //driver.close();
+        Thread.sleep(2000);
+         driver.close();
     }
 }

@@ -1,4 +1,4 @@
-package tests.day03_Webelement_Locators;
+package tests.day03_Webelements_Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,8 @@ import java.util.List;
 
 public class C03_Locators {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.choroma.driver", "src/resources/chromedriver.exe");
+
+        System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -36,8 +37,9 @@ public class C03_Locators {
         /*
         System.out.println(categoryElementleriList);
 
-            Biz bir listeyi direk olarak yazdirabiliriz ANCAK
-            Bu liste WebElement'ler icerdigi icin  direk yazdirmak istersek
+            Biz bir listeyi direk olarak yazdirabiliriz  ANCAK
+            Bu liste WebElement'ler icerdigi icin
+            direk yazdirmak istersek
             bize 3 tane referans degeri yazdirir
 
             WebElementleri direk yazdiramayacagimiz icin
@@ -48,12 +50,12 @@ public class C03_Locators {
 
         for (WebElement eachElement:categoryElementleriList
         ) {
-
             System.out.println(eachElement.getText());
         }
 
 
         //6- Sayfayi kapatin
+
         Thread.sleep(3000);
         driver.close();
     }

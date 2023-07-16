@@ -1,4 +1,4 @@
-package tests.day03_Webelement_Locators;
+package tests.day03_Webelements_Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +25,7 @@ public class C05_day03_Webelement_Metdodlari {
        int expectedLinkSayisi=147;
        int actualLinkSayisi=linkelEmentleriList.size();
 
-       if (expectedLinkSayisi==actualLinkSayisi){
+        if (expectedLinkSayisi==actualLinkSayisi){
            System.out.println("Link sayisi testi PASSED");
        }else {
            System.out.println("Link sayisi testi FAİLED");
