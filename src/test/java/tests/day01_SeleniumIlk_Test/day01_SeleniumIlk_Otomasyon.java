@@ -8,6 +8,7 @@ public class day01_SeleniumIlk_Otomasyon {
 
 
         WebDriver driver = new ChromeDriver();
+        // amazona git
         driver.get("https://www.amazon.com");
 
 
