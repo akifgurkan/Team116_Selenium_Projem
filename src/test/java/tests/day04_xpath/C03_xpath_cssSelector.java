@@ -10,6 +10,7 @@ import java.time.Duration;
 public class C03_xpath_cssSelector {
     public static void main(String[] args) throws InterruptedException {
 
+        // mahşerin 4 atlısını oluşturun :)
         System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
