@@ -6,22 +6,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class day01_SeleniumIlk_Otomasyon {
     public static void main(String[] args) {
 
-
         WebDriver driver = new ChromeDriver();
-        // amazona git
+        // amazona git ilk test
         driver.get("https://www.amazon.com");
-
-
     }
 }
 /*
-    Selenium ile testleri calistirirken
-    iyi bir orkestra yoneticisi OLMALISINIZ
-
-    Hangi enstrumani ne icin kullanacaginiz
-    ve hangi asamada hangi enstrumani projenize dahil edeceginizi
-    bilmeniz gerekir
-
+    Selenium ile testleri calistirirken iyi bir orkestra yoneticisi OLMALISINIZ
+    Hangi enstrumani ne icin kullanacaginiz ve hangi asamada hangi enstrumani projenize dahil edeceginizi bilmeniz gerekir
     Selenium ile test otomasyonu icin
     minumum olarak kullanmamiz gereken enstrumanlar
     1- Programlama Dili (Java)
@@ -42,9 +34,7 @@ public class day01_SeleniumIlk_Otomasyon {
       Herkesin bilgisayarinin isletim sistemi ve
       Bilgisayarinda bulunan Google Chrome browser'inin versiyonu
       farkli oldugundan
-
       Kendi bilgisayarimiz ve Cgrome browser surumune uygun olan
       Selenium.dev adresindeki browser dosyasini indirip projemizin
       altina kopyalamaliyiz
-
  */
